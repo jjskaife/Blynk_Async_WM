@@ -2065,7 +2065,7 @@ class BlynkWifi
       for (uint16_t i = 0; i < NUM_BLYNK_CREDENTIALS; i++)
       {
         config(BlynkESP32_WM_config.Blynk_Creds[i].blynk_token,
-               BlynkESP32_WM_config.Blynk_Creds[i].blynk_server, BLYNK_SERVER_HARDWARE_PORT);
+               BlynkESP32_WM_config.Blynk_Creds[i].blynk_server, BlynkESP32_WM_config.blynk_port);
 
         if (connect(BLYNK_CONNECT_TIMEOUT_MS) )
         {
